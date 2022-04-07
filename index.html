@@ -23,14 +23,13 @@
   </SCRIPT>
   <title>视频播放(b站@随风飘姚 制作)</title>
 </head>
-<body onload="onload()" bgcolor=#000000>
+<body onload="onload()" bgcolor=#00BFFF>
 <table  width="100%" align="center" height="100%" border="0" cellpadding="0" cellspacing="0">
 <tr>
         <td height="9">
                 <form method="post" action="">
                 <select name="jk" id="jk" size=1 onchange="fnChange()">
-								
-			<option value="https://yhn412.rth1.me/sm.html" >点go查看声明</option>
+			
 			<option value="https://github.com/yhn666/yhn666.github.io" >点go下载代码</option>
 			<option value="https://jx.parwix.com:4433/player/?url=" >Parwix解析系统（首推）</option>
 			<option value="https://www.bilibili.com/video/" >B站AVBV播放器（前面带ABV）</option>
@@ -65,6 +64,7 @@
                 <input type="text" name="vipurl" id="vipurl" size=88 value="">
                 <input type="button" value="Go！" onclick="onPlay()">
                 <input type="button" value="清除" onclick="onClear()">
+		<input type="button" value="声明" onclick="yhn666.github.io/sm.html">
                 <textarea rows="1" cols="90" readonly>将你需要播放，下载和搜索的放进框中，Go！</textarea>
          </form>
         </td>
