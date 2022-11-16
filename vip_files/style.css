@@ -1,0 +1,45 @@
+/*
+* video style
+*/
+dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,img,input,label,ol,p,textarea,ul{margin:0;padding:0;border:0;font-weight:400;vertical-align:baseline;font-family:inherit;font-style:inherit;outline:0}body{width:100%}.am-btn{padding:.5em 1em;border-radius:2px}.am-topbar-inverse.am-topbar-nav>li>a{font-family:arial;font-weight:600;font-size:16px}.am-topbar{margin-bottom:0}.header{margin:0 auto;width:94%;max-width:900px}.wrapper{margin:auto;min-width:360px;width:95%;margin:0 auto}.nav{height:64px}.nav p{text-align:center;line-height:64px;font-size:25px;font-weight:600;color:#0e90d2}.wrapper after,.wrapper:before{content:"";display:block;clear:both}.clear::after{clear:both;display:table;content:" "}.container{margin:0 auto}.cnt-t span{color:#fe8b1f;display:block;text-align:center;font-size:16px}.cnt-t2 iframe{background:#66ceff;height:520px;width:100%;margin:0 auto}.form-control{display:block;height:34px;font-size:16px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid#ccc;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out.15s,-webkit-box-shadow ease-in-out.15s;-o-transition:border-color ease-in-out.15s,box-shadow ease-in-out.15s;transition:border-color ease-in-out.15s,box-shadow ease-in-out.15s;position:relative;z-index:2;width:100%;margin:0 auto;margin-bottom:0}.input-lg{height:42px;line-height:1.3333333;border-color:#0e90d2;-webkit-appearance:none}select{cursor:default;-webkit-appearance:menulist}select.input-lg{text-align:left;text-align-last:left;text-indent:.5em;height:42px;outline-style:none;-webkit-appearance:none;border-color:#0e90d2;border-radius:0;font-size:16px}select.input-lg:hover{background:#e6e6e6}.cnt-3-1,.cnt-3-2,.cnt-3-3{border-color:#66ceff;padding-bottom:5px}.cnt-3-1 select,.cnt-3-2 input,.cnt-3-3 button{border-radius:5px}.cnt-3-2 input{text-indent:.5em}.btn{display:inline-block;margin-bottom:0;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;color:#FFF;background:#0e90d2;outline-style:none;display:#000;height:42px;font-size:18px;line-height:1.3333333;width:100%}.cnt-3{margin-bottom:15px}.foot{text-align:center}.foot a{text-decoration:none}.foot p{text-align:center;padding-top:10px;padding-bottom:10px}@media screen and (min-device-width:1000px){.wrapper{width:70%;margin:0 auto}.cnt-3-1,.cnt-3-2,.cnt-3-3{border-color:#66ceff;float:left}.cnt-3-2 input{text-indent:.5em}.cnt-3-1{width:17%}.cnt-3-2{width:70%;padding-left:3%;padding-right:3%}.cnt-3-3{width:13%}select.input-lg{text-align:center;text-align-last:center}}@media screen and (max-device-width:760px){.wrapper{width:95%;margin:0 auto}.cnt-t2 iframe{height:260px}}
+
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Microsoft YaHei', 'PingFang SC','Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell','Fira Sans', 'Droid Sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif,'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';}
+a{text-decoration: none;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+li{list-style: none;}
+html{-webkit-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-ms-text-size-adjust: 100%;text-size-adjust: 100%;text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;}
+.aim-topbar{min-width: 360px;width: 100%;height: 50px;background-color: #2196f3;border-color: #ddd;position: relative;border-bottom-color: rgba(0,0,0,.1);}
+.aim-topbar:before,.aim-topbar:after,.aim-container:before,.aim-container:after{content: " ";clear:both;display: table;}
+.aim-header{width: 75%;height: 50px;margin: 0 auto;}
+.aim-title{padding: 0 15px;line-height: 50px;float: left;}
+.aim-title a{font-size: 18px;font-weight: 400;color: #fff;}
+.aim-topbar-nav{float: left;line-height: 50px;}
+.aim-topbar-nav li{float: left;position: relative;padding:0 10px;}
+.aim-topbar-nav .aim-active a{background-color: rgba(0,0,0,.2);}
+.aim-topbar-nav li a{color: #fff;padding: 5px;border-radius: 5px}
+.aim-topbar-nav li a:hover{background-color: rgba(0,0,0,.2);padding: 5px;border-radius: 5px}
+
+.aim-topbar-right{float: right;line-height: 50px;}
+.aim-btn,.aim-menu{padding: 8px 14px;border: none;outline-style: none;background-color: #5eb95e;color: #fff;border-radius: 5px;vertical-align: unset;font-size: unset;}
+.aim-btn:hover,.aim-menu:hover{background-color: #4aaa4a}
+.aim-btn-warning{background-color: #f37b1d; border-color: #f37b1d;}
+.aim-btn-warning:hover{background-color: #e0690c;}
+.aim-a { color: #fff; }
+.aim-a:hover { color: #e0690c; }
+
+.aim-container{width: 94%;min-width: 360px;max-width: 960px;margin: 0 auto;}
+.aim-container .logo{text-align: center;font-size: 24px;margin: 1.6rem 0;color: #045fb4;font-weight: bold;}
+.aim-list li{float: left;padding: 10px;width: 100%;line-height: 1.6;height: 250px}
+.aim-panel{text-align: center;}
+.aim-panel img{border-radius: 10px;box-shadow: 0 3rem 5rem -2rem rgba(0,0,0,0.2);transition:.1s all ease-in-out;-moz-trnsition:.1s all ease-in-out;-webkit-transtion:.1s all ease-in-out}
+.aim-panel img:hover{transform:scale(1.1);-webkit-transform:scale(1.1);-moz-trnsition:scale(1.1)}
+.aim-text {padding: 12px 1.6rem;font-size: 12px}
+.aim-text a{font-size: 1.4rem;}
+.am-text-xl{color: #0e90d2}
+.am-text-xl:hover{color:#095f8a}
+footer{display: block;padding-bottom: 10px;}
+.intro-siteinfo {font-family: cursive;}
+.copyright-tip { font-size: 14px; }
+@media only screen and (min-width: 660px){.aim-menu{display: none;}}
+@media only screen and (max-width: 660px){.aim-menu{display: block;float: right;margin-top: 8px;}.aim-topbar-nav{width: 100%;display: none;}.aim-topbar-nav li{float: none;text-align: center;background-color: #2196f3;margin: 5px;border-radius: 5px}.aim-btn{display: none;}}
+@media only screen and (max-width: 1025px) and (min-width: 661px){.aim-list li{width: 49%;}}
+@media only screen and (min-width: 1025px){.aim-list li{width: 33.33%}}
