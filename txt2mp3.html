@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文字转语音</title>
+<style>
+    /* 输入框 */
+    .dzm-input {
+      padding: 5px;
+      border: 1px solid red;
+    }
+	/* 输入框为空时显示 placeholder */
+    .dzm-input:empty:before {
+      content: attr(placeholder);
+      color: red;
+    }
+	/* 输入框获取焦点时移除 placeholder */
+    .dzm-input:focus:before {
+      content: none;
+    }
+</style>
+<script language="JavaScript">
+function change()
+{
+    var flg=document.getElementById("t3").value
+	switch(flg)
+	{
+	    case "1":
+		  url="https://fanyi.sogou.com/reventondc/synthesis?text="+document.getElementById("t1").innerText+"&speed=1&lang=zh-CHS&from=translateweb&speaker="+document.getElementById("t2").value
+          window.open(url,'_blank')
+		  break;
+		case "2":
+		  url="https://tts.baidu.com/text2audio?tex="+document.getElementById("t1").innerText+"&cuid=baike&lan=ZH&ctp=1&pdt=301&vol=9&rate=32&per="+document.getElementById("t2").value
+          window.open(url,'_blank')
+		  break;
+		case "3":
+		  url="https://tts.youdao.com/fanyivoice?word="+document.getElementById("t1").innerText+"&le=cn&keyfrom=speaker-target"
+          window.open(url,'_blank')
+		  break
+	}
+
+}
+    // 禁止回车换行
+function myFunction(){
+  if (window.event && window.event.keyCode == 13) {
+    window.event.returnValue = false;
+  }
+}
+</script>
+</head>
+
+<body>
+<div style="font-size:20px;color:#F00;text-align: center;font-weight:bold">
+文字转语音小工具
+</div>
+</br>
+输入文本:
+<div class="dzm-input" id="t1" contenteditable="true" placeholder="请输入文本" onkeydown="myFunction()"></div>
+选择朗读者：
+<select name = "t2" id="t2">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+</select>
+&nbsp&nbsp&nbsp选择接口：
+<select name = "t3" id="t3">
+  <option value="1">搜狗翻译</option>
+  <option value="2">百度百科</option>
+  <option value="3">有道翻译</option>
+</select>
+ 
+</br></br>
+<button type="button" onclick="change()">生成语音</button></br></br>
+<div style="font-size:15px;">
+注意：</br>搜狗翻译→有1-6个朗读者可选</br>
+百度百科→只有1-5个朗读者可选</br>
+有道翻译→只有一种朗读者,将就着用吧
+</div>
+</body>
+
+</html>
