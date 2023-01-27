@@ -4,7 +4,7 @@ if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
 let divTyping = document.getElementById('xf_type')
 let i = 0,
     timer = 0,
-    str = '全民制作人们大家好，我是练习时长两年半的个人练习生坤坤，喜欢唱、跳、rap、篮球、music' //text
+    str = '想让每个人都快乐，全网同名（有可能）' //text
 function typing() {
     if (i <= str.length) {
         divTyping.innerHTML = str.slice(0, i++) + '_'
@@ -40,7 +40,7 @@ var binft = function (r) {
             setTimeout(i, d)
     }
     var l = "",
-        o = ["大道至简,开发由我","饿了么,一起来学习吧",].map(function (r) {
+        o = ["摸鱼三小时，学习一分钟","学习使我快乐(除了考试需要的)","我学习呢，来找我吧","我有很多好康的，欢迎来撩","全网同名(有可能)","咕咕咕(啄)咕~","为什么编程不像scratch一样好学！！！","欢迎你来到我的家乡，大庆","我要当UP主，爷爷奶奶可高兴了，给我一只鸽子","1+1+4-5+1+4=6","改造格林菲尔德市ing~","有可能以后会开MC服务器","我有MC正版啦(跳)","如果你在MC服务器里游荡，看见yhn666_CN就有可能是我","如果你网上冲浪看到yhn666也有可能是我","我相信你不会上涩涩网站的吧","为什么我的头像是一只兔子呢(还是屁股)","高中太难啦(悲)","平常睡大觉，考试就发懵","我在打这些字的时候我在家答卷子呢","手机在手，学习没有","(拿刀)(对准卷子)(waste)","啥啥不会","米环7yyds","f**k you,dingtalk","我的网课完成啦","c,t,r,l,music","只因你太美，电脑都卡退","噩梦1000米","当你在学习的时候，你在玩","我烦语文",].map(function (r) {
             return r + "."
         }),
         a = 2,
