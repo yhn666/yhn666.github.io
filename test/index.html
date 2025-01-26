@@ -1,23 +1,107 @@
-<!doctype html>
-<html lang="zh-CN" class="mdui-theme-auto">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
-    <meta name="renderer" content="webkit"/>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人主页</title>
+  <!-- 引入 MDUI CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css">
+</head>
+<body class="mdui-appbar-with-toolbar">
+  <!-- 导航栏 -->
+  <header class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-indigo">
+      <a href="javascript:;" class="mdui-typo-headline">我的个人主页</a>
+      <div class="mdui-toolbar-spacer"></div>
+      <a href="#about" class="mdui-typo-subheading">关于我</a>
+      <a href="#skills" class="mdui-typo-subheading">技能</a>
+      <a href="#contact" class="mdui-typo-subheading">联系</a>
+    </div>
+  </header>
 
-    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
-    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- 主要内容 -->
+  <div class="mdui-container">
+    <!-- 关于我 -->
+    <section id="about" class="mdui-typo mdui-p-t-5">
+      <h1 class="mdui-text-center">关于我</h1>
+      <div class="mdui-row">
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <img src="https://via.placeholder.com/400x300" alt="我的照片" class="mdui-img-fluid mdui-shadow-10">
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <p>你好！我是小明，一名前端开发者，热爱 Web 技术和设计。我专注于构建美观、高效的用户界面，并致力于提升用户体验。</p>
+          <p>我擅长使用 HTML、CSS、JavaScript 和 Vue.js 等前端技术，同时也对后端开发有一定的了解。</p>
+        </div>
+      </div>
+    </section>
 
-    <title>随风飘姚的小站</title>
-  </head>
-  <body>
-    <mdui-top-app-bar>
-      <mdui-button-icon icon="menu--rounded"></mdui-button-icon>
-      <mdui-top-app-bar-title>随风飘姚</mdui-top-app-bar-title>
-      <div style="flex-grow: 1"></div>
-      <mdui-button-icon icon="more_vert"></mdui-button-icon>
-    </mdui-top-app-bar>
-    <mdui-button>测试</mdui-button>
-  </body>
+    <!-- 技能展示 -->
+    <section id="skills" class="mdui-typo mdui-p-t-5">
+      <h1 class="mdui-text-center">我的技能</h1>
+      <div class="mdui-row">
+        <div class="mdui-col-xs-12 mdui-col-md-4">
+          <div class="mdui-card mdui-shadow-10">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">HTML & CSS</div>
+              <div class="mdui-card-primary-subtitle">熟练掌握</div>
+            </div>
+          </div>
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-md-4">
+          <div class="mdui-card mdui-shadow-10">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">JavaScript</div>
+              <div class="mdui-card-primary-subtitle">熟练使用</div>
+            </div>
+          </div>
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-md-4">
+          <div class="mdui-card mdui-shadow-10">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Vue.js</div>
+              <div class="mdui-card-primary-subtitle">熟悉框架</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系信息 -->
+    <section id="contact" class="mdui-typo mdui-p-t-5">
+      <h1 class="mdui-text-center">联系我</h1>
+      <div class="mdui-row">
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <p>如果你对我的工作感兴趣，欢迎通过以下方式联系我：</p>
+          <ul class="mdui-list">
+            <li class="mdui-list-item">
+              <i class="mdui-list-item-icon mdui-icon material-icons">email</i>
+              <div class="mdui-list-item-content">邮箱: xiaoming@example.com</div>
+            </li>
+            <li class="mdui-list-item">
+              <i class="mdui-list-item-icon mdui-icon material-icons">phone</i>
+              <div class="mdui-list-item-content">电话: 123-456-7890</div>
+            </li>
+          </ul>
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <form class="mdui-form">
+            <div class="mdui-textfield">
+              <input class="mdui-textfield-input" type="text" placeholder="你的名字" required>
+            </div>
+            <div class="mdui-textfield">
+              <input class="mdui-textfield-input" type="email" placeholder="你的邮箱" required>
+            </div>
+            <div class="mdui-textfield">
+              <textarea class="mdui-textfield-input" placeholder="留言内容" rows="3" required></textarea>
+            </div>
+            <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo">发送</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 引入 MDUI JS -->
+  <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"></script>
+</body>
 </html>
