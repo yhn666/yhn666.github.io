@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人主页 - 联系方式</title>
+  <!-- 引入 MDUI CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css">
+  <style>
+    .contact-card {
+      position: relative;
+      padding: 16px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .contact-card img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .contact-card .name {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .contact-card .link {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      font-size: 14px;
+      color: #2196F3;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body class="mdui-appbar-with-toolbar">
+  <!-- 导航栏 -->
+  <header class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-indigo">
+      <a href="javascript:;" class="mdui-typo-headline">我的个人主页</a>
+      <div class="mdui-toolbar-spacer"></div>
+      <a href="#about" class="mdui-typo-subheading">关于我</a>
+      <a href="#skills" class="mdui-typo-subheading">技能</a>
+      <a href="#contact" class="mdui-typo-subheading">联系</a>
+    </div>
+  </header>
+
+  <!-- 主要内容 -->
+  <div class="mdui-container">
+    <!-- 联系方式页面 -->
+    <section id="contact" class="mdui-typo mdui-p-t-5">
+      <h1 class="mdui-text-center">联系方式</h1>
+      <div class="mdui-row">
+        <!-- 邮箱 -->
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <div class="contact-card mdui-shadow-10">
+            <img src="https://via.placeholder.com/40" alt="邮箱图标">
+            <span class="name">邮箱</span>
+            <a href="mailto:xiaoming@example.com" class="link">xiaoming@example.com</a>
+          </div>
+        </div>
+        <!-- 电话 -->
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <div class="contact-card mdui-shadow-10">
+            <img src="https://via.placeholder.com/40" alt="电话图标">
+            <span class="name">电话</span>
+            <a href="tel:123-456-7890" class="link">123-456-7890</a>
+          </div>
+        </div>
+        <!-- GitHub -->
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <div class="contact-card mdui-shadow-10">
+            <img src="https://via.placeholder.com/40" alt="GitHub图标">
+            <span class="name">GitHub</span>
+            <a href="https://github.com/xiaoming" target="_blank" class="link">访问我的GitHub</a>
+          </div>
+        </div>
+        <!-- LinkedIn -->
+        <div class="mdui-col-xs-12 mdui-col-md-6">
+          <div class="contact-card mdui-shadow-10">
+            <img src="https://via.placeholder.com/40" alt="LinkedIn图标">
+            <span class="name">LinkedIn</span>
+            <a href="https://linkedin.com/in/xiaoming" target="_blank" class="link">访问我的LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 引入 MDUI JS -->
+  <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"></script>
+</body>
+</html>
